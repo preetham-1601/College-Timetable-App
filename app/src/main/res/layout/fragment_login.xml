@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.LoginFragment"
+    android:background="@color/brown">
+
+    <ImageView
+        android:id="@+id/img_icn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/_avatar" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/img_icn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_border"
+        android:drawableStart="@drawable/ic_baseline_email_24"
+        android:hint="Email/Username"
+        android:paddingLeft="10dp"
+        android:textSize="17dp" />
+
+    <EditText
+        android:id="@+id/etPass1"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/etEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/round_border"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:hint="Password"
+        android:textSize="17dp" />
+    <TextView
+        android:id="@+id/frg_pw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etPass1"
+        android:text="Forgot Password?"
+        android:textColor="@color/white"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="60dp"/>
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:layout_below="@id/frg_pw"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+    <ImageView
+        android:id="@+id/lin_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line_1"
+        android:layout_below="@id/btn_login"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"/>
+    <ImageView
+        android:id="@+id/img_or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/or"
+        android:layout_below="@id/btn_login"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/lin_1"/>
+
+    <ImageView
+        android:id="@+id/lin_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_login"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="60dp"
+        android:src="@drawable/line_1" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_or"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Register"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/w_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_register"
+        android:text="Continue with out signing in?"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+</RelativeLayout>
